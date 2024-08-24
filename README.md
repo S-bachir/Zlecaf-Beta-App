@@ -1,14 +1,38 @@
 **Zlecaf E-commerce in Africa**
 *SABO bachir* 
 
-Avant de lancer l'application, la mise en place d'une base de données et de certains packages est requise.
+# Application Setup Instructions
 
-1. Installation de packages : Les packages dont dépend notre application se trouvent dans le fichier requirements.txt, ainsi que la version compatible de Python (3.6). Pour les installer, il faudra exécuter la commande "pip install -r requirements.txt" dans le terminal.
+Before launching the application, it's required to set up a database and install certain packages.
 
-2. Pour la mise en place de la base de données, plusieurs fichiers se trouvent dans le répertoire "bdd". Parmi ces fichiers, il y en a 2 au format SQL à copier/coller et à exécuter dans un éditeur de requêtes SQL, ainsi qu'un autre au format Python à lancer dans votre IDE. La classe permettant la connexion entre l'application et la base de données se trouve dans "dao/pool_connection.py", où vous trouverez toutes les informations nécessaires à ce sujet. (Les articles permettant de remplir la base de données ont été scrapés à partir de plusieurs sites e-commerce entre juillet et septembre 2021).
+## 1. Package Installation
 
-Après avoir mis en place tout cela, vous pouvez lancer l'application dans votre IDE en passant par le fichier "main.py" se trouvant à la racine du projet, ou en exécutant la commande "python3 main.py" dans le terminal, ou "python.exe main.py" selon votre système d'exploitation.
+The packages that our application depends on are listed in the `requirements.txt` file, along with the compatible Python version (3.6). To install them, execute the following command in the terminal:
 
-Le fichier PDF "Rapport_Zlecaf_Beta_App" permet de mieux comprendre les enjeux de la Zlecaf en termes d'exploitation des sites de e-commerce. Il permet également de comprendre les étapes de mise en place de cette application. (Rappelons que cette application n'est qu'une maquette qui servira de plan pour une architecture plus globale).
+```bash
+pip install -r requirements.txt
+```
 
-Merci de votre attention !
+## 2. Database Setup
+
+Several files are located in the `bdd` directory. Among these files, there are two SQL files that need to be copied and executed in an SQL query editor, as well as a Python file that needs to be run in your IDE. The class that facilitates the connection between the application and the database can be found in `dao/pool_connection.py`, where you will find all the necessary information regarding this connection. (The articles to populate the database were scraped from several e-commerce sites between July and September 2021).
+
+## 3. Launching the Application
+
+After setting everything up, you can launch the application in your IDE by running the `main.py` file located at the root of the project, or by executing the following command in the terminal:
+
+```bash
+python3 main.py
+```
+
+Alternatively, on some operating systems, you may need to use:
+
+```bash
+python.exe main.py
+```
+
+## Additional Documentation
+
+The PDF file `Rapport_Zlecaf_Beta_App` provides a better understanding of the Zlecaf's challenges in terms of exploiting e-commerce sites. It also outlines the steps involved in setting up this application. (Note that this application is just a prototype that will serve as a plan for a more comprehensive architecture).
+
+Thank you for your attention!
